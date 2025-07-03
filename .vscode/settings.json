@@ -1,0 +1,18 @@
+
+{
+  // これらの設定は、このワークスペースでのみ有効になります
+
+  // Pythonファイルに特化した設定
+  "[python]": {
+    // 1. PythonファイルのデフォルトフォーマッターとしてRuffを設定
+    "editor.defaultFormatter": "charliermarsh.ruff",
+
+    // 2. ファイル保存時にデフォルトフォーマッター（Ruff）を実行する
+    "editor.formatOnSave": true,
+
+    // 3. ファイル保存時にRuffによるLintエラーの自動修正を実行する
+    "editor.codeActionsOnSave": {
+      "source.fixAll.ruff": "explicit"
+    }
+  }
+}
